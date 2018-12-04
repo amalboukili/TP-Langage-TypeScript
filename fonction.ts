@@ -1,4 +1,4 @@
-
+/*
 function carre(x: number): number {
     return x * x;
 };
@@ -16,3 +16,15 @@ function afficheNom(nom: string, prenom?: string): void {
 }
 afficheNom('Durand');
 afficheNom('Dupont', 'Marcel');
+*/
+
+//Valeur par défaut
+function afficheNom1(nom:string, prenom ='Jean'): void{
+    let texte=nom;
+    if(prenom){
+        texte+=' '+prenom;
+    }
+    console.log(texte);
+}
+afficheNom1('Durand');
+afficheNom1('Dupont', 'Marcel');
